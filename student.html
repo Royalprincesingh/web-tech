@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="student.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="student.html">Student</a>
+        <a href="faculty.html">Faculty</a>
+        <a href="employee.html">Employee</a>
+    </div>
+ <form action="/register" method="post">
+    <h2>Student Registration Form</h2>
+    <div>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+        <label>Gender:</label>
+        <div class="radio-group">
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other" required>
+            <label for="other">Other</label>
+        </div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="fatherName">Father's Name:</label>
+        <input type="text" id="fatherName" name="fatherName" required>
+
+        <label for="motherName">Mother's Name:</label>
+        <input type="text" id="motherName" name="motherName" required>
+        <label for="mobileNo">Mobile Number:</label>
+        <input type="tel" id="mobileNo" name="mobileNo" required>
+
+
+
+        <label for="studentId">Student ID:</label>
+        <input type="text" id="studentId" name="studentId" required>
+        <label for="dateOfBirth">Date of Birth:</label>
+        <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required>
+        <label for="major">Dipartment:</label>
+        <select id="major" name="major" required>
+            <option value="">select</option>
+            <option value="computerScience">Computer Science</option>
+            <option value="engineering">Engineering</option>
+            <option value="business">Business</option>
+            <option value="arts">Arts</option>
+            <option value="other">Other</option>
+        </select>
+        <button type="submit">Register</button>
+    </div>
+</form>
+</body>
+</html

@@ -1,0 +1,87 @@
+
+<div class="registration-container">
+    <h2>Registration Form</h2>
+    <form id="registrationForm">
+        <div class="form-group">
+            <label for="userType">I am a:</label>
+            <select id="userType" name="userType" required>
+                <option value="">Select user type</option>
+                <option value="student">Student</option>
+                <option value="faculty">Faculty</option>
+                <option value="employee">Employee</option>
+            </select>
+        </div>
+
+        <!-- Common Fields -->
+        <div class="form-group">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+
+        <!-- Student-specific fields -->
+        <div class="student-fields" style="display: none;">
+            <div class="form-group">
+                <label for="studentId">Student ID:</label>
+                <input type="text" id="studentId" name="studentId">
+            </div>
+            <div class="form-group">
+                <label for="major">Major:</label>
+                <input type="text" id="major" name="major">
+            </div>
+        </div>
+
+        <!-- Faculty-specific fields -->
+        <div class="faculty-fields" style="display: none;">
+            <div class="form-group">
+                <label for="facultyId">Faculty ID:</label>
+                <input type="text" id="facultyId" name="facultyId">
+            </div>
+            <div class="form-group">
+                <label for="department">Department:</label>
+                <input type="text" id="department" name="department">
+            </div>
+        </div>
+
+        <!-- Employee-specific fields -->
+        <div class="employee-fields" style="display: none;">
+            <div class="form-group">
+                <label for="employeeId">Employee ID:</label>
+                <input type="text" id="employeeId" name="employeeId">
+            </div>
+            <div class="form-group">
+                <label for="position">Position:</label>
+                <input type="text" id="position" name="position">
+            </div>
+        </div>
+
+        <button type="submit">Register</button>
+    </form>
+</div>
+
+<script>
+    document.getElementById('userType').addEventListener('change', function() {
+        var studentFields = document.querySelector('.student-fields');
+        var facultyFields = document.querySelector('.faculty-fields');
+        var employeeFields = document.querySelector('.employee-fields');
+
+        studentFields.style.display = 'none';
+        facultyFields.style.display = 'none';
+        employeeFields.style.display = 'none';
+
+        if (this.value === 'student') {
+            studentFields.style.display = 'block';
+        } else if (this.value === 'faculty') {
+            facultyFields.style.display = 'block';
+        } else if (this.value === 'employee') {
+            employeeFields.style.display = 'block';
+        }
+    });
+</script>

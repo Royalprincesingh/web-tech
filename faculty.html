@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <link rel="stylesheet" href="student.css">
+    <div class="navbar">
+        <a href="student.html">Student</a>
+        <a href="faculty.html">Faculty</a>
+        <a href="employee.html">Employee</a>
+    </div>
+    <form action="/register" method="post">
+        <h2>Faculty Registration Form</h2>
+        <div>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+            <div><label for="gender">Gender:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other" required>
+                <label for="other">Other</label>
+            </div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="facultyId">Faculty ID:</label>
+            <input type="text" id="facultyId" name="facultyId" required>
+            <label for="dateOfBirth">Date of Birth:</label>
+            <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+            <label for="department">Department:</label>
+            <select id="department" name="department" required>
+                <option value="">Select</option>
+                <option value="computerScience">Computer Science</option>
+                <option value="engineering">Engineering</option>
+                <option value="business">Business</option>
+                <option value="arts">Arts</option>
+                <option value="other">Other</option>
+            </select>
+            <label for="experience">Years of Experience:</label>
+            <input type="number" id="experience" name="experience" min="0" required>
+            <label for="specialization">Specialization:</label>
+            <input type="text" id="specialization" name="specialization" required>
+            <label for="officeHours">Office Hours:</label>
+            <input type="text" id="officeHours" name="officeHours" placeholder="e.g., Mon 2-4 PM, Wed 1-3 PM" required><br>
+            <label for="researchInterests">Research Interests:</label>
+            <input type="text" placeholder="Research"><br>
+            <label for="highestDegree">Highest Degree Earned:</label>
+            <select id="highestDegree" name="highestDegree" required>
+                <option value="">Select</option>
+                <option value="bachelors">Bachelor's</option>
+                <option value="masters">Master's</option>
+                <option value="doctorate">Doctorate</option>
+                <option value="postdoc">Post-Doctorate</option>
+            </select><br>
+            <button type="submit">Register</button>
+        </div>
+    </form>
+</body>
+</html>

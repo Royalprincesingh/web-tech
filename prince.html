@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prince web page</title>
+    <link rel="stylesheet" href="prince.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>MOVIES</h1>
+            <li style="color: red;">subscribe</li>
+        </div>
+        <div class="nav">
+            <ul>
+            <li><a href="prince.html">HOME</a></li>
+            <li><a href="movies.html">MOVIE</a></li>
+            <li><a href="">WEB SERIES</a></li>
+            <li><a href="">TV</a></li>
+            <li><a href="">CONTACT</a></li>
+            <li><input type="search" placeholder="search" style="background-color: rgb(247, 244, 244);border-radius: 20px;"></li>
+            <button onclick="openloginmodul()">LOGIN</button>
+        </ul>
+        </div>
+        <div class="bgimg"></div>
+        <div class="main">
+            
+            <h1>
+                MOVIES
+            </h1>
+            <h3>Unlimited movies , TV shows, and more</h3>
+           <li> <img src="https://i.pinimg.com/474x/b4/ee/25/b4ee25bddb3355683d9c6518427c58f7.jpg" alt="" style="height: 300px;"></li>
+            <button style="border-radius: 20px; height: 5vh; width: 100px;">watch now</button>
+        </div>
+        <div class="footer">
+            <h1>Upcoming Movies</h1>
+             <img src="https://assets.gadgets360cdn.com/pricee/assets/product/202406/singham_again_1_1718337414.jpg?downsize=215:301" alt="">
+             <img src="https://i.pinimg.com/474x/f9/cb/2e/f9cb2ed16100e7e759f8986382c56d61.jpg" alt="">
+             <img src="https://i.pinimg.com/474x/43/6a/88/436a88ce3a7da360b969efbb2706cdb4.jpg" alt="">
+             <img src="https://assets.gadgets360cdn.com/pricee/assets/product/202308/Welcome-to-the-Jungle_1693286547.jpg?downsize=215:301" alt="">
+             <img src="https://assets.gadgets360cdn.com/pricee/assets/product/202402/baby_john1_1707225419.jpg?downsize=215:301" alt="">
+             <img src="https://assets.gadgets360cdn.com/pricee/assets/product/202402/Badass_Ravikumar_Poster1_1708665075.jpg?downsize=215:301" alt="">
+
+        </div>
+        <div class="latest">
+            <h1>
+                Latest movies
+            </h1>
+            <img src="https://i.pinimg.com/474x/f3/e3/52/f3e352ab25f967db69982b5d47671af2.jpg" alt="">
+            <img src="https://i.pinimg.com/474x/62/dc/4d/62dc4d842745ee1e6f5c26f8bfa10b50.jpg" alt="">
+            <img src="https://i.pinimg.com/474x/cf/b3/94/cfb39470b25b11175ccca6620389332c.jpg" alt="">
+            <img src="https://i.pinimg.com/474x/e7/c9/b2/e7c9b243526feb237724693a7157ac13.jpg" alt="">
+            <img src="https://i.pinimg.com/474x/75/2d/29/752d29e9d9cb839a8fc8fb5acd064bad.jpg" alt="">
+            <img src="https://assets.gadgets360cdn.com/pricee/assets/product/202408/Hindi_Vindi_p1_1724146714.jpg?downsize=215:301" alt="">
+        </div>
+    </div>
+ 
+    <script>
+        function openloginmodul(){
+            document.getElementById("model").style.display="block";
+            
+        }
+        function closeloginmodul(){
+            document.getElementById("model").style.display="none";
+        }
+        window.onclick = function(event){
+            if(event.target==document.getElementById("model"))
+        {
+            document.getElementById("model").style.display="none";
+        }
+        }
+    </script>
+</body>
+</html>
+<div id="model" >
+    <span  onclick="closeloginmodul()">&times;</span>
+    <form action="" id="myForm">
+        <h1>LOGIN</h1>
+        <input type="text" name="username" placeholder="username"><br>
+        <input type="password" name="password" placeholder="password"><br>
+        <button type="submit">Login</button>
+    </form>
+</div>
