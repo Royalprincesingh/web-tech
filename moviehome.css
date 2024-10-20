@@ -125,3 +125,43 @@ span{
     
 }
 
+@media only screen and (max-width: 750px) {
+    .container {
+        width: 100%;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav ul li {
+        margin: 10px 0;
+    }
+
+    .latest {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .latest img {
+        width: 80%;
+        height: auto;
+    }
+
+    #model {
+        left: 50%;
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .nav button {
+        margin: 10px 0;
+    }
+}

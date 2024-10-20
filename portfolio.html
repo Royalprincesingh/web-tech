@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 0;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            margin-bottom: 50px;
+        }
+
+        .hero img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 5px solid #ffffff;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            backdrop-filter: blur(10px);
+        }
+
+        .section h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .skill {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 1rem;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .project {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .project img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .projects :hover{
+            transform: scale(1.03);
+            transition: transform 0.3s ease;
+            box-shadow: 0 0 10px rgba(106, 103, 103, 0.1);
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .social-links a {
+            color: #ffffff;
+            font-size: 2rem;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #ffd700;
+            transform: scale(1.5);
+            transition: transform 0.3s ease;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .hero {
+                padding: 50px 0;
+            }
+
+            .hero h2 {
+                font-size: 2rem;
+            }
+
+            .section h3 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+
+    <div class="container">
+        <header>
+            <h1>Prince's Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <img src="DSC_0320.jpg" alt="Prince's profile picture">
+                <h2>Hi, I'm Prince</h2>
+                <p>A passionate web developer creating beautiful and functional websites.</p>
+            </section>
+
+            <section id="about" class="section">
+                <h3>About Me</h3>
+                <p>I'm a creative and detail-oriented web developer with a strong passion for building user-friendly and visually appealing websites. With expertise in HTML, CSS, and JavaScript, I strive to create seamless web experiences.</p>
+            </section>
+
+            <section id="skills" class="section">
+                <h3>Skills</h3>
+                <div class="skills">
+                    <span class="skill">HTML5</span>
+                    <span class="skill">CSS3</span>
+                    <span class="skill">JavaScript</span>
+                    <span class="skill">React</span>
+                    <span class="skill">Node.js</span>
+                    <span class="skill">MongoDB</span>
+                    <span class="skill">Responsive Design</span>
+                </div>
+            </section>
+
+            <section id="projects" class="section">
+                <h3>Projects</h3>
+                <div class="projects">
+                    <div class="project">
+                        <img src="https://i.pinimg.com/474x/db/46/92/db4692e14f2976c551b2a79c928a9a4b.jpg" alt="Project 1">
+                        <h4>Home Automation</h4>
+                        <p>This is a home automation project that uses a Node mcu to control smart devices in a home.</p>
+                    </div>
+                    <div class="project">
+                        <img src="Screenshot 2024-10-20 at 8.26.41 AM.png" alt="Project 2">
+                        <h4>Project 2</h4>
+                        <p>A brief description of the project and technologies used.</p>
+                    </div>
+                    <div class="project">
+                        <img src="Screenshot 2024-10-04 at 7.01.51 PM.png" alt="Project 3">
+                        <h4>Project 3</h4>
+                        <p>A brief description of the project and technologies used.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="section">
+                <h3>Get in Touch</h3>
+                <p>Feel free to reach out to me for any inquiries or collaboration opportunities.</p>
+                <div class="social-links">
+                    <a href="https://github.com/Royalprincesingh/web-tech/tree/main/entry%20registration%20form" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="www.linkedin.com/in/Royalprincesingh" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="mailto:prince@example.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
